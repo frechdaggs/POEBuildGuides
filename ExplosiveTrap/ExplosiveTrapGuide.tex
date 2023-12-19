@@ -1,0 +1,30 @@
+\documentclass{scrreprt}
+
+% Bindet alle benoetigten Packages ein.
+\input{../packages}
+
+% Bindet individuelle Befehle ein.
+\input{../commands}
+
+% Bindet allgemeine Dokument-Einstellungen ein.
+\input{../settings}
+
+\begin{document}
+\include{./00_Titlepage/title}
+	
+\chapter{Pros \& Cons}
+\input{./01_Chapters/ProsCons}
+
+\chapter{Used Mechanics}
+\input{./01_Chapters/InterestingMechanics}
+
+\chapter{Defence Strategy}
+\input{./01_Chapters/DefenceStrategy}
+
+\chapter{Damage Strategy}
+\input{./01_Chapters/DamageStrategy}
+
+\chapter{Build Strategy: Purity of Elements}
+\input{./01_Chapters/Build Strategy_PurityofElements}
+
+\end{document}
