@@ -1,6 +1,121 @@
-\usepackage{url}
+% --------------------------------------------------------------
+% - Fließtext-Packages
+% --------------------------------------------------------------
+% [Deutsches Sprachpaket]{Mehrsprachige Dokumente}
+\usepackage[english]{babel}
 
+% Umlaute im Quellcode ermöglichen.
+% Dazu unbedingt die Textcodierung des Editors auch auf UTF-8 stellen
+\usepackage[utf8]{inputenc}
+
+% Font Encoding für bessere Schriftendarstellung
+\usepackage[OT1]{fontenc}
+\usepackage{pifont}
+
+% Dreht bei landscape-Umgebung die Seite im .pdf
+\usepackage{pdflscape}
+
+% setzt Leerzeichen, wenn welche hingehören (vor nächstem wort, aber nicht vor "." oder ")")
+\usepackage{xspace}
+
+% ermöglicht den Zugriff auf Zeilenabstände
+\usepackage{setspace}
+
+% schönerer Blocksatz
+\usepackage{microtype}
+
+% Hurenkinder vermeiden
+\usepackage[all]{nowidow}
+
+% ermöglicht römische Zahlen
+\usepackage{romannum}
+
+% --------------------------------------------------------------
+% - Fließobjekte-Packages
+% --------------------------------------------------------------
+% verbessert die Schnittstelle zu Fließobjekten
+\usepackage{float}
+
+% Paket zur Positionierung von Fließobjekten
+\usepackage{wrapfig} 
+
+% einbinden von Grafiken
+\usepackage{graphicx}
+
+% erzeugen von Tabellen
+\usepackage{longtable}
+\usepackage{array}
 \usepackage{multirow}
 
+% ermöglicht Beschriftung von Fließobjekten
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+
+% Ermöglicht Darstellung von Code-Auzügen ein
+\usepackage{listings}
+
+% ermöglicht Einfärben von Tabellen
+\usepackage{colortbl}
+
+
+% --------------------------------------------------------------
+% - Mathematik-Packages
+% --------------------------------------------------------------
+\usepackage[fleqn]{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsopn}
+\usepackage{commath}
+
+% Schönere Vektoren
+\usepackage{esvect}
+
+% si-Units
+\usepackage[locale = DE,per-mode=fraction]{siunitx}
+
+% --------------------------------------------------------------
+% - Misc
+% --------------------------------------------------------------
+% Ermöglicht Blindtext als Platzhalter
+\usepackage{blindtext}
+
+% einbinden ganzer pdf-Seiten
+\usepackage{pdfpages}
+
+% verwendung von Farben
+\usepackage{color}
+\usepackage{xcolor}
+
+% ermöglicht stellenweises Querformat  
+\usepackage{lscape}
+
+% ermöglicht Streichen
+\usepackage{cancel}
+
+% Zur Verwendung von bibtex
+\usepackage[numbers]{natbib} 
+\bibliographystyle{plainnat}
+
+% Einstellen von Kopf- und Fußzeile
+\usepackage{scrlayer-scrpage}
+
+% --------------------------------------------------------------
+% - Letztes package!!!!!!!!!!!!
+% --------------------------------------------------------------
+% Hyperreferenzierung	
+\usepackage{url}
 \usepackage{hyperref}
+\usepackage[nameinlink, capitalize, ngerman]{cleveref}
 \usepackage[all]{hypcap}
+
+% Glossar
+\usepackage[
+nonumberlist, 	%keine Seitenzahlen anzeigen
+acronyms,		%ein Formelzeichenverzeichnis erstellen
+abbreviations,	%ein Abkürzungsverzeichnis erstellen
+toc,          	%Einträge im Inhaltsverzeichnis
+nopostdot     	%Den Punkt am Ende jeder Beschreibung deaktivieren
+]{glossaries-extra}
+
+
+
+%wichtig: Ab hier kein usepackage mehr !!!
