@@ -1,0 +1,22 @@
+\documentclass{scrreprt}
+
+% Bindet alle benoetigten Packages ein.
+\input{../packages}
+
+% Bindet individuelle Befehle ein.
+\input{../commands}
+
+% Bindet allgemeine Dokument-Einstellungen ein.
+\input{../settings}
+
+\begin{document}
+\include{./00_Titlepage/title}
+
+
+\chapter{Itemization}
+\input{./01_Chapters/Itemization}
+
+
+\bibliography{./04_Literatur/literatur.bib}
+
+\end{document}
